@@ -14,12 +14,11 @@ The Daugman algorithm is a commonly used method for iris and pupil detection. Th
 
 Explanation of the equation:
 
-I(x,y) : x,y grayscale pixel values
+I(x,y) : The value of the pixel at coordinates (x,y)
 
+![integral](https://latex.codecogs.com/svg.latex?\color{white}\int_{r,x0,y0}^{}\frac{I(x,y)}{2\pi.r}dx)  : The operation calculates the area for a circle with radius r and centered at (x0, y0).
 
-![integral](https://latex.codecogs.com/svg.latex?\int_{r,x0,y0}^{}\frac{I(x,y)}{2\pi.r}dx)  : The operation calculates the area for a circle with radius r and centered at (x0, y0).
-
-![türev](https://latex.codecogs.com/svg.latex?\frac{d}{dr}) : The operation represents the difference or derivative between the fields.
+![türev](https://latex.codecogs.com/svg.latex?\color{white}\frac{d}{dr}) : The operation represents the difference or derivative between the fields.
 
 G(r): It is the Gaussian operator that is multiplied to ensure that the differences between the fields follow a normal distribution.
 
